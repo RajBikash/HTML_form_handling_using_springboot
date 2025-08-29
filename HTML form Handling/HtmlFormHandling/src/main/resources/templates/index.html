@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    form {
+      background: #ffffff;
+      padding: 0 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 350px;
+      overflow: hidden;
+    }
+    h2 {
+      text-align: center;
+      margin: 0;
+      padding: 15px 0;
+      background: #4CAF50;
+      color: white;
+    }
+    label {
+      font-weight: bold;
+      margin: 10px 0 5px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    /* Proper Gender Section */
+    .gender-section {
+      margin-bottom: 15px;
+    }
+    .gender-options {
+      display: flex;
+      gap: 20px; /* space between options */
+      margin-top: 5px;
+    }
+    .gender-options label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 6px; /* space between circle and text */
+      cursor: pointer;
+    }
+    .gender-options input[type="radio"] {
+      accent-color: #4CAF50;
+      margin: 0;
+      cursor: pointer;
+    }
+    button {
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form method="POST" action="/view">
+    <h2>Student Form</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="rollno">Roll No</label>
+    <input type="text" id="rollno" name="rollno" placeholder="Enter your roll no" required>
+
+    <label for="course">Course</label>
+    <select id="course" name="course" required>
+      <option value="">Select</option>
+      <option>BCA</option>
+      <option>MCA</option>
+      <option>BBA</option>
+    </select>
+
+    <div class="gender-section">
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+    </div>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+    <button type="submit">Submit</button>
+    
+  </form>
+</body>
+</html>
