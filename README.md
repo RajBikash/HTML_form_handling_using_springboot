@@ -2,7 +2,7 @@
 
 A simple web application built with Spring Boot and Thymeleaf that lets users submit student details via a form and view them dynamically on a separate page.
 
-🚀 Overview
+## 🚀 Overview
 
 This project demonstrates:
 
@@ -12,7 +12,7 @@ This project demonstrates:
 
 👀 Viewing submitted data with Thymeleaf templates
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Backend: Spring Boot, Spring MVC
 
@@ -22,7 +22,7 @@ Build Tool: Maven
 
 Language: Java ☕
 
-✨ Features
+## ✨ Features
 🎓 Student Registration Form:
 
 Name
@@ -37,7 +37,7 @@ Date of Birth
 
 Address
 
-Other Features:
+## Other Features:
 
 🔄 Dynamic data rendering
 
